@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Site partner",
+  "version": "1.0.0",
+  "description": "",
+  "host_permissions": ["*://*.com/*"],
+  "permissions": ["tabs","activeTab","scripting","storage"],
+  "content_scripts": [],
+  "action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+      "service_worker": "background.js"
+  }
+}
