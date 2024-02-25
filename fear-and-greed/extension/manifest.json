@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Fear&Greed",
+  "version": "1.0",
+  "description": "Pulls Fear&Greed index from CNN",
+  "host_permissions": [],
+  "permissions": ["alarms","storage"],
+  "action": {
+    "default_icon": "images/neutral.png",
+    "default_popup": "popup/popup.html",
+    "default_title": "Fear&Greed"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
