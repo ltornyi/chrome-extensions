@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "MS Graph Auth Extension",
+  "version": "1.0",
+  "description": "A Chrome extension to add authentication headers to API requests",
+  "permissions": ["storage", "identity", "declarativeNetRequest", "alarms"],
+  "host_permissions": [
+    "https://graph.microsoft.com/*",
+    "http://localhost:8000/*"
+  ],
+  "action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup/popup.html",
+    "default_title": "MS Graph Auth Extension"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
